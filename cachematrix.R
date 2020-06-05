@@ -23,7 +23,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
   m <- x$getinv()
-  if(!is.null(m)) {
+  if(!is.null(m)) {?version()
+m <- matrix(rnorm(16),4,4)
+
     message("getting cached data")
     return(m)
   }
